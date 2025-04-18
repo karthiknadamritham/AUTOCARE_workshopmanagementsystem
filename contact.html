@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AutoCare Workshop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            400: '#fb7185',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                            800: '#9f1239',
+                            900: '#881337',
+                            950: '#4c0519',
+                        },
+                        secondary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'pulse-slow': 'pulse 3s infinite',
+                        'spin-slow': 'spin 3s linear infinite',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <?php include 'includes/navbar.php'; ?>
+    
+    <!-- Contact Header Section -->
+    <section class="pt-32 pb-20 relative bg-gradient-to-br from-primary-600 via-primary-500 to-secondary-600">
+        <div class="absolute inset-0">
+            <div class="absolute -top-20 -right-20 w-72 h-72 bg-gradient-to-br from-white/20 to-white/5 rounded-full animate-float blur-xl"></div>
+            <div class="absolute -bottom-20 -left-20 w-48 h-48 bg-gradient-to-tr from-white/20 to-white/5 rounded-full animate-float delay-1000 blur-xl"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-2xl mx-auto text-center text-white">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+                <p class="text-lg text-white/80">Have questions or need assistance? We're here to help you with all your automotive needs.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Information Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Phone -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Phone</h3>
+                    <p class="text-gray-600">+1 234 567 890</p>
+                    <p class="text-gray-600">+1 987 654 321</p>
+                </div>
+                
+                <!-- Email -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Email</h3>
+                    <p class="text-gray-600">info@autocare.com</p>
+                    <p class="text-gray-600">support@autocare.com</p>
+                </div>
+                
+                <!-- Address -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Address</h3>
+                    <p class="text-gray-600">123 Workshop Street</p>
+                    <p class="text-gray-600">City, Country, 12345</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <!-- Form -->
+                    <div class="p-8 lg:p-12">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+                        <form action="#" method="POST">
+                            <div class="mb-6">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Your Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary-600 text-white py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Map -->
+                    <div class="bg-gray-200">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d-123.12345678901234!3d49.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDA3JzI0LjQiTiAxMjPCsDA3JzI0LjQiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Business Hours Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Business Hours</h2>
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="p-4 border-b md:border-b-0 md:border-r border-gray-200">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Weekdays</h3>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Monday</span>
+                                    <span class="font-medium">8:00 AM - 6:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Tuesday</span>
+                                    <span class="font-medium">8:00 AM - 6:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Wednesday</span>
+                                    <span class="font-medium">8:00 AM - 6:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Thursday</span>
+                                    <span class="font-medium">8:00 AM - 6:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Friday</span>
+                                    <span class="font-medium">8:00 AM - 6:00 PM</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Weekends</h3>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Saturday</span>
+                                    <span class="font-medium">9:00 AM - 4:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Sunday</span>
+                                    <span class="font-medium text-primary-600">Closed</span>
+                                </li>
+                            </ul>
+                            <div class="mt-6 pt-6 border-t border-gray-200">
+                                <h4 class="font-semibold text-gray-900 mb-2">Emergency Service</h4>
+                                <p class="text-gray-600">Available 24/7 - Call our emergency hotline</p>
+                                <p class="text-primary-600 font-semibold mt-2">+1 234 567 890</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- About Section -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold">AutoCare</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Your trusted partner in automotive care. We provide professional car repair and maintenance services with a commitment to excellence.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-semibold">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="index.php" class="text-gray-400 hover:text-primary-500 transition-colors flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.php#services" class="text-gray-400 hover:text-primary-500 transition-colors flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                <span>Services</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.php" class="text-gray-400 hover:text-primary-500 transition-colors flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services Links -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-semibold">Services</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="booking.php" class="text-gray-400 hover:text-primary-500 transition-colors flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                <span>Oil Change</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="booking.php" class="text-gray-400 hover:text-primary-500 transition-colors flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                <span>Brake Service</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="booking.php" class="text-gray-400 hover:text-primary-500 transition-colors flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                <span>Engine Repair</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-semibold">Contact Info</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary-500"></i>
+                            <span class="text-gray-400">123 Workshop Street<br>City, Country</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-primary-500"></i>
+                            <span class="text-gray-400">+1 234 567 890</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-primary-500"></i>
+                            <span class="text-gray-400">info@autocare.com</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-clock mt-1 text-primary-500"></i>
+                            <span class="text-gray-400">
+                                Mon - Fri: 8:00 AM - 6:00 PM<br>
+                                Sat: 9:00 AM - 4:00 PM
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2024 AutoCare Workshop. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors text-sm">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html> 
